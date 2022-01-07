@@ -4,7 +4,6 @@ phases:
     commands:
         - apt update -y
         - apt install python3-pip -y
-        - apt install python3-venv -y
         - pip install flask -y
   build:
     commands:
