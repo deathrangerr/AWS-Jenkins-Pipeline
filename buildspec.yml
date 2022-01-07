@@ -3,7 +3,7 @@ phases:
   install:
     commands:
         - apt update -y
-        - apt install python3-pip -y
+        - apt install python-pip -y
         - pip install -U pip
         - pip install -r requirements.txt
         
@@ -11,7 +11,7 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Compiling the Python code...
-      - python3 test_app.py
+      - python test_app.py
   post_build:
     commands:
       - echo Build completed on `date`
