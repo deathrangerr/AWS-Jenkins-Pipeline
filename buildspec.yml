@@ -1,9 +1,11 @@
-
 version: 0.2
 phases:
+  install:
+    commands:
+        - apt-get install python3-pip -y
+        - python3 -m pip install Flask
   build:
     commands:
-      - pip3 install flask
       - echo Build started on `date`
       - echo Compiling the Python code...
       - python3 test_app.py
