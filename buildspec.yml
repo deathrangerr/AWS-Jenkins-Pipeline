@@ -3,15 +3,14 @@ phases:
   install:
     commands:
         - apt update -y
-        - apt install python python-pip -y
-        - pip install pyOpenSSL ndg-httpsclient pyasn1
-        - pip install -r requirements.txt
+        - apt install python3 python3-pip -y
+        - pip3 install -r requirements.txt
         
   build:
     commands:
       - echo Build started on `date`
       - echo Compiling the Python code...
-      - python test_app.py
+      - python3 test_app.py
   post_build:
     commands:
       - echo Build completed on `date`
