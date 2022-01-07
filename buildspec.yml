@@ -1,10 +1,18 @@
 version: 0.2
 phases:
   install:
+    runtime-versions:
+      python: 3.8
+  pre_build:
     commands:
-        - apt update -y
-        - apt install python3-pip -y
-        - pip install Flask 
+      - apt-get install -y python3-venv
+      - python3.6 -m venv test_venv
+      - . test_venv/bin/activate
+      - pip install --upgrade pip
+      - pip install .
+      - pip install -r tests/requirements.txt
+      - rm -rf dspt
+      - mkdir test-reports
   build:
     commands:
       - echo Build started on `date`
