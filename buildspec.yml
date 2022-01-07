@@ -2,10 +2,8 @@ version: 0.2
 phases:
   install:
     commands:
-        - apt update -y
-        - apt install python3 python3-pip -y
-        - pip3 install -r requirements.txt
-        
+        - python -m pip install Flask
+      
   build:
     commands:
       - echo Build started on `date`
