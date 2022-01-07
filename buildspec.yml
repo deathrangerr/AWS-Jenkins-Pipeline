@@ -1,12 +1,6 @@
 version: 0.2
 phases:
-  install:
-    commands:
-        - apt update -y
-        - apt-get install python3-pip -y
-        - pip install --upgrade launchpadlib
-        - pip install --upgrade setuptools
-        - python3 -m pip install Flask
+
   build:
     commands:
       - echo Build started on `date`
