@@ -5,7 +5,6 @@ phases:
         - apt update -y
         - apt install python3-pip -y
         - pip3 install --upgrade setuptools
-        - pip3 install cfn-lint
         - pip3 install -r requirements.txt 
         
   build:
