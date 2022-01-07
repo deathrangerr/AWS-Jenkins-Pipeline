@@ -2,8 +2,10 @@ version: 0.2
 phases:
   install:
     commands:
-        - apt install python3-venv
-        - pip install flask
+        - apt update -y
+        - apt install python3-pip -y
+        - apt install python3-venv -y
+        - pip install flask -y
   build:
     commands:
       - echo Build started on `date`
