@@ -4,10 +4,6 @@ phases:
     commands:
         - pip3 install Flask
   build:
-    commands:
-      - echo Build started on `date`
-      - echo Compiling the Python code...
-      - python test_app.py
   post_build:
     commands:
       - echo Build completed on `date`
