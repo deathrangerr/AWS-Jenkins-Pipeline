@@ -3,7 +3,7 @@ phases:
   install:
     commands:
         - apt update -y
-        - apt install python python-pip
+        - apt install python python-pip -y
         - pip install -r requirements.txt 
         
   build:
