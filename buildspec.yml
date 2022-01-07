@@ -4,7 +4,7 @@ phases:
     commands:
         - apt update -y
         - apt install python python-pip -y
-        - pip install pyopenssl ndg-httpsclient pyasn1
+        - pip install pyOpenSSL ndg-httpsclient pyasn1
         - pip install -r requirements.txt
         
   build:
