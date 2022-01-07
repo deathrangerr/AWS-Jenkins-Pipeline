@@ -4,6 +4,8 @@ phases:
     commands:
         - apt update -y
         - apt-get install python3-pip -y
+        - pip install --upgrade launchpadlib
+        - pip install --upgrade setuptools
         - python3 -m pip install Flask
   build:
     commands:
