@@ -19,7 +19,7 @@ The functioning pipeline creates a fully managed build service that compiles you
 
 Creating resources to build the infrastructure, including the Jenkins server, CodeBuild project, and CodeDeploy application.
 
-Accessing and unlocking the Jenkins server.
+Accessing and unlocking the Jenkins server..
 
 Creating a project and configuring the CodeDeploy Jenkins plugin.
 
