@@ -2,7 +2,7 @@ version: 0.2
 phases:
   install:
     commands:
-        - npm install
+        - yum install python-pip3
         - pip3 install --upgrade awscli
         - python -m pip install Flask
   build:
